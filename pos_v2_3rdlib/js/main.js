@@ -1,6 +1,7 @@
 var Cart = require('./cart');
 var Scanner = require('./scanner');
 var Inventory = require('./inventory');
+var _ = require('lodash');
 
 function printInventory(tags) {
 
@@ -15,4 +16,4 @@ function printInventory(tags) {
   console.log(inventory.toString(cart));
 }
 
-module.exports = printInventory;
+exports.printInventory = printInventory;
