@@ -7,12 +7,12 @@ describe('scanner',function() {
       var Scanner = require('../pos_v2_3rdlib/js/scanner');
       var scanner = new Scanner();
 
-      var result = scanner.setscanner('ITEM000000');
+      var result = scanner.setscanner('ITEM000003-2');
 
       var item = jest.genMockFn();
-      item.mockReturnValue('ITEM000000');
+      item.mockReturnValue('ITEM000003-2');
 
-      var cartitem = {item:{'barcode':'ITEM000000','name':'可口可乐','unit':'瓶','price':3}, 'count' : 1};
+      var cartitem = {item:{'barcode':'ITEM000003','name':'荔枝','unit':'斤','price':15}, 'count' : 2};
 
       expect(result).toEqual(cartitem);
 

@@ -1,3 +1,5 @@
+var Cart = require('./cart');
+
 function Inventory() {
 
 }

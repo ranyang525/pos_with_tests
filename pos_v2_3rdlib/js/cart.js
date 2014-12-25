@@ -1,5 +1,6 @@
 var Promotion = require('./promotion');
 var _ = require('../../lib/lodash-2.4.1/lodash.js');
+var CartItem = require('./cart-item');
 
 function Cart() {
   this.cartItems = [];
@@ -11,7 +12,7 @@ Cart.prototype.addCartItem = function(oneCartItem) {
     return cartItem.item.barcode === oneCartItem.item.barcode;
   });
   if (cartItem) {
-    cartItem.count += oneCartItem.count;
+    cartItem.count++;
   } else {
     this.cartItems.push(oneCartItem);
   }
