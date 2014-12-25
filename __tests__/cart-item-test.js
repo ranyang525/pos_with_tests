@@ -1,7 +1,7 @@
 jest.dontMock('../pos_v2_3rdlib/js/cart-item.js');
 
 describe('CartItem', function() {
-  describe('getPromotioncount', function() {
+  describe('#getPromotioncount', function() {
 
     it('should return promotioncount',function() {
       var CartItem = require('../pos_v2_3rdlib/js/cart-item.js');
