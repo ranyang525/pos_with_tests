@@ -70,6 +70,7 @@ describe('Cart',function() {
 
     })
   });
+  
   describe('#getSummaryText',function() {
     it('should return summaryText',function() {
 
